@@ -1,0 +1,324 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e6;
+    color: #333;
+  }
+
+  .sbn {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 0%;
+  }
+
+  #cafe {
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .nc {
+    font-size: 1.1rem;
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 0%;
+  }
+
+  #playlist {
+    padding-bottom: 5%;
+  }
+  
+  #about {
+    padding-bottom: 0%;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  header.transparent {
+    background-color: transparent;
+  }
+  
+  header.solid {
+    background-color: #1d1212;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: white;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hero {
+    height: 100vh;
+    background-image: url('../img/banner\ xicara.png'); /* URL da imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  #about, #menu, #contact {
+    padding: 3rem 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 calc(20% - 2rem);
+  }
+
+
+
+
+  .map-section {
+    padding-left: 2rem 0;
+    padding-bottom: 2rem 0;
+    padding-right: 2rem 0;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .map {
+    flex: 1;
+    max-width: 35%; /* Ajuste o tamanho máximo dos mapas conforme necessário */
+    margin: 0 1rem; /* Adiciona um espaço entre os mapas */
+  }
+  
+  .left-map, .right-map {
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-map {
+    padding-right: 5%;
+  }
+
+  .right-map {
+    padding-left: 5%;
+  }
+  
+  .left-map iframe, .right-map iframe {
+    width: 100%;
+    height: 100%;
+    border-color: #1d1212;
+    border-style: initial;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  
+  #carousel {
+    padding-top: 5%;
+  }
+
+  .carousel {
+    position: relative;
+    width: 70%;
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Centraliza o carrossel no contêiner */
+
+  }
+  
+  .carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Garante o alinhamento vertical central */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 100;
+    display: flex; /* Adiciona flexbox aos botões */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 0.5rem; /* Adiciona padding para aumentar a área clicável */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+
+
+/* Footer */
+.footer {
+  background-color: #1d1212;
+  color: white;
+  padding: 2rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f4a261;
+  margin-left: 0%;
+  text-align: left; /* Alinhando o título à esquerda */
+}
+
+.footerp,
+.footer-section a {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  text-align: left; /* Alinhando os parágrafos e links à esquerda */
+}
+
+.footerp:hover,
+.footer-section a:hover {
+  color: #f4a261;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center; /* Alinha os ícones e texto na mesma linha */
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  vertical-align: middle; /* Garante o alinhamento vertical */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+  color: #aaa;
+}
+
+.footerpmenor {
+  font-size: 0.79rem;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  margin-top: 0; 
+  text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-section {
+    text-align: center; /* Centralizando o texto nas seções em telas pequenas */
+  }
+}
